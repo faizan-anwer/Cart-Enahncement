@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Confirmation</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.hoverIntent.minified.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.dcmegamenu.1.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/common.js"></script>
+<script language="javascript" type="text/javascript" src="js/dropdowncontent.js"></script>
+
+<!--[if lte IE 7]>
+<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+	// Custom Setting Cart Table
+	$(".cart-table tbody tr:nth-child(2n+2) td").css("padding-bottom","10px");
+});    
+</script>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+	// Custom Setting Cart Table
+	$(".cart-table tbody tr:nth-child(2n+2) td").css("padding-bottom","10px");
+});    
+</script>
+<![endif]-->
+</head>
+
+<body>
+<!-- Main Wrapper Conatiner Start -->
+<div class="wrapper">
+	<div class="page">
+    	
+       <!-- BEGIN Header --> 
+  <!-- BEGIN HeaderDisplay.jspf -->   
+  <!-- BEGIN CachedHeaderDisplay.jsp -->
+        <div class="header-container">
+			<div class="header">
+				<h1 class="logo"><a href="#" title="360training.com" class="logo"><img src="images/logo.gif" alt="360training.com" /></a></h1>
+                <div class="quick-access">
+                	<ul class="links">
+                    	<li><div class="live_sale">24/7 Support<br />1-800-442-1149</div></li>
+						<li><div class="technical_support"><a href="http://www.360trainingsupport.com" target="_blank">Technical<br />Support</a></div></li>
+						<li><div class="sales_enroll">Sales/Enroll<br /><strong>888-360-8764</strong></div></li>
+						<li><div class="corporate_solution"><strong>Corporate Solutions</strong><br /><a href="http://www.360comply.com" target="_blank">Learn More</a></div></li>
+					</ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+          <!-- END HeaderDisplay.jspf -->   
+  <!-- END CachedHeaderDisplay.jsp -->
+        <!-- END Header --> 
+        
+        
+  <!-- BEGIN Navigation -->   
+  <!-- BEGIN ESpotNavDisplay.jsp -->
+        
+        
+        <div class="nav-container-new">
+			<ul id="nav-new">
+            	<li class="black"><a href="#">Home</a></li>
+                <li class="red"><a href="#" class="dropdown">Course Library</a>
+                    <ul>
+                      <li> <a href="#">OSHA Online Outreach Training</a></li>
+                      <li> <a href="#">HAZWOPER Training</a></li>
+                      <li><a href="#">MSHA Part 46 Training</a></li>
+                      <li> <a href="#">Alcohol Seller Certification</a></li>
+                      <li> <a href="#">Food Manager Certification</a></li>
+                      <li> <a href="#">Insurance Licencing</a></li>
+                      <li class="last"><a href="#">Adjuster Licensing</a></li>
+                    </ul>
+				</li>
+                <li class="red">
+                	<form method="post" action="#" id="searchform">
+						<div class="search_box">
+							<div class="search_area">
+								<input type="text" class="search-txt" value="" id="q" name="q" />
+								<input type="image" src="images/search_bar_right_corner.png" class="search_btn" />
+                            </div>
+						</div>
+                    </form>
+                </li>
+				<li class="black"><a href="services.html" class="chat">Chat</a></li>
+                <li><a href="#">Login</a>
+					<div class="popup">
+						<div class="loginform">
+                        	<form method="post" action="#" id="loginform">
+								<div class="label"> Email </div>
+								<input type="text" class="text" />
+								<div class="label"> Password </div>
+								<div class="clearfix"></div>
+								<input type="password" class="text" />
+                            	<div class="clearfix"></div>
+                            	<input type="image" class="login_btn" src="images/login_button.png" />
+                            	<a href="#"> Forgot passoword? </a>
+                            </form>
+						</div>
+					</div>
+                </li>
+                <li class="last cart"><a href="#" class="cart"> 3 Items </a>
+					<div class="popup" style="width: 250px; right:0px;">
+						<div class="productcart_info">
+							<div class="product_name"> Anti-Money Laundering &amp; Financial Crime </div>
+							<div class="product_price"> $50 </div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="productcart_info">
+							<div class="product_name"> Anti-Money Laundering &amp; Financial Crime </div>
+							<div class="product_price"> $50 </div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="productcart_info">
+							<div class="product_name"> Anti-Money Laundering &amp; Financial Crime </div>
+							<div class="product_price"> $50 </div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="chck_btn"><input type="image" src="images/checkout.png" /></div>
+					</div>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        
+        <!-- END ESpotNavDisplay.jsp -->
+        <!-- END Navigation --> 
+        
+        <!-- Middle Container Start here -->
+        <div class="main-container col1-layout">
+        	<div class="main">
+            	<div class="col-main">
+                	
+                    <!-- Begin wizard -->
+					<div class="wizardnavigation">
+						<ul id="stepNav">
+							<li class="stepNav2Color"> <span> 1 </span>Account &amp; Billing Information</li>
+							<li class="current"> <span>2 </span> Confirm Your Order</li>
+							<li class="stepNavNoBg"> <span> 3 </span> Receipt </li>
+						</ul>
+                        <div class="clearfix"></div>
+					</div>
+					<!-- End wizard -->
+                    
+                    <!-- Cart Container Area -->
+					<div class="cart">
+                    	
+                        <div class="page-title title-buttons">
+							<h1>Confirm Your Order</h1>							
+                            <div class="clearfix"></div>
+            			</div>
+                        
+                        <form id="shoppingCart" action="http://portals.austin.360training.com/360training.com/360CartPages/new-html/receipt.html" method="post">
+                        <div class="cart-content">
+                        	<div class="col2-set">
+                            	<div class="col-1">
+                                	<div class="block1">										
+                                  		<div class="account-info">
+                                        	<h3 class="title">Student Account Information <a title="Edit" class="edit" href="#"> Edit</a></h3>                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" class="data-table">
+                                              <tbody>
+                                                <tr>
+                                                  <td> Guest</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td> Guest</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Guest</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>92707 United States</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>( 714 ) 825 - 7341</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>jjones@gmail.com</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>********</td>
+                                                  <td>&nbsp;</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                    	</div>
+                                        <div class="billing-info">
+                                        	<h3 class="title">Billing Information <a title="Edit" class="edit" href="#"> Edit</a></h3>
+											<table width="100%" cellspacing="0" cellpadding="0" border="0" class="data-table">
+                                                <tbody>
+                                                  <tr>
+                                                    <td>VISA ************8899</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Expires JAN 2014</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>&nbsp;</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Nora Jones</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>123 Main Street</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Santa Ana, CA</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>92707 United States</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>( 714 ) 825 - 7341</td>
+                                                    <td>&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                    	</div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                	<div class="block2">
+                                    	<h3 class="title">My Cart</h3>	
+                                        <table class="data-table" cellpadding="0" cellspacing="0">
+                                        	<colgroup>
+                                            	<col />
+                                                <col width="1" />
+                                                <col width="1" />
+                                            </colgroup>
+                                        	<thead>
+                                            	<tr>
+                                                	<th rowspan="1" width="75%" class="a-left first">Item Name</th>
+                                                    <th rowspan="1" class="a-center"><a class="tooltip" href="javascript:void();">QTY
+                                                    	<span style=" text-transform:none;" class="custom info">
+                                                    		<img src="images/Info.png" alt="Information" /><em>Information</em> The account you have entered is an individual student account. If you would like to make a purchase as a group en-roller please continue by creating a new account and deselecting the "Returning User" option
+                                                    	</span></a>
+                                                    </th>
+                                                    <th rowspan="1" class="a-center">Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            	<tr>
+                                                	<td class="a-left first">Texas Proerty &amp; Casualty Licensing</td>
+                                                    <td class="a-center">1</td>
+                                                    <td class="a-center">$1.499.00</td>
+                                                </tr>
+                                                <tr class="last">
+                                                	<td class="a-left first">Insurance Adjuster Course</td>
+                                                    <td class="a-center">1</td>
+                                                    <td class="a-center">$1.499.00</td>
+                                                </tr>                                                
+                                            </tbody>
+                                        </table>
+                                        <hr class="sep" />
+                                        <table class="data-table" id="subtotal" cellpadding="0" cellspacing="0">
+                                        	<colgroup>
+                                            	<col />
+                                                <col width="1" />
+                                            </colgroup>
+                                        	<thead>
+                                            	<tr>
+                                                	<th class="a-left first" width="83%" rowspan="1">Subtotal</th>
+                                                    <th class="a-right" rowspan="1">$1.349.10</th>
+                                                </tr>
+                                            </thead>                                            	
+                                            <tfoot>
+                                            	<tr>
+                                                	<td class="a-left first">TOTAL</td>
+                                                    <td class="a-right">$1.349.10</td>
+                                                </tr>
+                                            </tfoot>
+                                            <tbody>
+                                            	<tr>
+                                                	<td class="a-left first">Course Material &amp; Books <a class="tooltip" href="#">What is this?<span class="custom info"><img width="48" height="48" alt="Information" src="images/Info.png" /><em>Information</em> <em>Course Materials and Books</em> If your course requires the use of a textbook or workbook, there is no additional materials fee and you should receive these within 5 business days of purchase. Access to the online course is available immediately after purchase. <br /><br />These business courses include workbooks with no shipping fee:<br />• &nbsp; Administrative Assistant Certificate<br />• &nbsp; Customer Service Representative Certificate<br />• &nbsp; Office Clerk Certificate<br />These insurance courses include a Resource Guide with a $7.95 shipping fee:<br />• &nbsp; Life &amp; Health Insurance  Premium and Ultimate Success Packages<br />• &nbsp; Property &amp; Casualty Insurance  Premium and Ultimate Success Packages<br /></span></a>
+                                                    </td>
+                                                    <td class="a-right">0.00</td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="a-left first">Processing Fee <a class="tooltip" href="#">What is this?<span class="custom info"><img width="48" height="48" alt="Information" src="images/Info.png" /><em>Information</em> <em>Processing &amp; Other Fees</em> With other schools, you'll find lots of additional fees when you enroll or request a payment plan. But with Everest, it might be easier to mention all the fees you won't pay: <br /><br />• &nbsp; No credit checks<br />• &nbsp; No income verification<br />• &nbsp; No application fees<br />• &nbsp; No interest rates*<br />• &nbsp; No finance charges<br />• &nbsp; No processing fees<br />• &nbsp; No penalties for early repayment<br /><br />* Although Everest does not charge interest, your credit card company may.</span></a>
+                                                    </td>
+                                                    <td class="a-right">0.00</td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="a-left first">Shipping &amp; Handeling <a href="#" class="tooltip"> What is this?<span class="custom info"><img width="48" height="48" alt="Information" src="images/Info.png" /><em>Information</em> When applicable, the shipping of books or other materials is included in the cost of the course. The exception is a $7.95 shipping fee, which will appear on the Confirmation page, for the Resource Guide that comes with Premium and Ultimate Success Insurance Packages only. </span></a>
+                                                    </td>
+                                                    <td class="a-right">0.00</td>
+                                                </tr>
+                                                <tr class="last">
+                                                	<td class="a-left first">Tax <a href="#" class="tooltip">What is this?<span class="custom info"><img width="48" height="48" alt="Information" src="images/Info.png" /><em>Information</em> Taxes are due on the items that we ship to you.  Cost of these items is included in the product price. </span></a>
+                                                    </td>
+                                                    <td class="a-right">0.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>										
+                                    </div>
+                                    <div class="buttons-set finalsubmit">                                    	
+                                    	<div class="btnPlaceOrder">
+                                        	<button type="submit" class="button place-order2"><span><span>Place Order</span></span></button>
+                                    	</div>
+                                    	<div class="clearfix"></div>
+                                   	</div>
+                                    
+                                     <!-- BEGIN ExtraNoteESpot.jsp -->
+                                    
+                                    <p class="extra_note"> 
+                                      <a href="#" class="tooltip"> What if I change my mind? Refund Policy.<span class="custom info"><img width="48" height="48" alt="Information" src="images/Info.png" /><em>Refund Policy</em> Should you decide that the course you've selected isn't going to work for you, we do provide refunds. A full refund will be issued so long as you have not yet completed 25 percent of the program and you've submitted a written request for a refund within 3 days of first logging into the course OR you have never logged into the course, and submit a written request for a refund within 14 days of purchasing the program (whichever occurs first). We do not offer partial refunds. If printed materials were included in the program fee, you must (at your own expense) ship these materials back to the corporate office before the refund will be processed. <br />
+                                        <br />
+                                        Everest Continuing Education<br />
+                                        c/o 360training.com<br />
+                                        13801 Burnet Rd. Suite 100<br />
+                                        Austin, TX 78727 </span></a> <br />
+                                        <a href="#" class="tooltip"> How and when will I have access to my courses?.<span class="custom info"><img width="48" height="48" alt="Information" src="images/Info.png" /> <em>How to access courses</em> Once you complete the purchase process, you will receive an email with all of the necessary information to login into the Learning Management System (LMS). Once you login, your course will be available immediately.* <br />
+                                        <br />
+                                        *Some courses may require a textbook or other materials that you should receive within 5 business days of purchase. </span></a>
+                                    </p>
+                                    <p class="phone">If you have any questions of need help completing this transaction,</p>
+                                    <h2 class="call">please call 888.239.8788. </h2>
+                                    
+                                     <!-- END ExtraNoteESpot.jsp -->
+                                    
+                                      <!-- BEGIN TestimonnialESpot.jsp -->
+                                    
+                                    
+                                   			 <div class="testimonnial">
+										<h2>What People are Saying</h2>
+                                      	<p> Overall, I think the course work is great. Everything is explained in simple English and the voiceover is wonderful. </p>
+                                      	<div class="pointer"> </div>
+                                      	<div class="testimoneer"> <strong>Lori Ann Leonard</strong><br /><span> Employee Benefits Specialist </span> </div>
+                                    </div>
+                                    
+                                    <!-- End TestimonnialESpot.jsp -->
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>                       
+                        </form>
+                        
+                    </div>
+                    <!-- End Cart -->
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- Middle Container End here -->
+        
+        
+         <!-- BEGIN SecurityLogosESpot.jsp -->
+        		 <div class="footer-container">
+			<div class="footer">
+				<ul class="logos"> 
+					<li> <img src="images/bbb.gif" alt="ACCREDITED" /></li>
+					<li> <img src="images/truste.gif" alt="Trustee" /></li>
+					<li> <img src="images/nortonsecure.gif" alt="Norton Secure" /></li>
+					<li>  <img src="images/Securiy.png" alt="Security" /></li>
+					<li class="last"> <img src="images/360training.gif" alt="360training" /></li>
+				</ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+       	  <!-- END SecurityLogosESpot.jsp --> 
+    
+	</div>
+</div>
+<!-- Main Wrapper Conatiner End -->
+</body>
+</html>

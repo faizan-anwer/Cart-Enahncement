@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Receipt</title>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+<script language="javascript" type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.hoverIntent.minified.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.dcmegamenu.1.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/common.js"></script>
+<script language="javascript" type="text/javascript" src="js/dropdowncontent.js"></script>
+
+<!--[if lte IE 7]>
+<link href="css/ie7.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+	// Custom Setting Cart Table
+	$(".cart-table tbody tr:nth-child(2n+2) td").css("padding-bottom","10px");
+});    
+</script>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+	// Custom Setting Cart Table
+	$(".cart-table tbody tr:nth-child(2n+2) td").css("padding-bottom","10px");
+});    
+</script>
+<![endif]-->
+</head>
+
+<body>
+<!-- Main Wrapper Conatiner Start -->
+<div class="wrapper">
+	<div class="page">
+    	
+       <!-- BEGIN Header --> 
+  <!-- BEGIN HeaderDisplay.jspf -->   
+  <!-- BEGIN CachedHeaderDisplay.jsp -->
+        <div class="header-container">
+			<div class="header">
+				<h1 class="logo"><a href="#" title="360training.com" class="logo"><img src="images/logo.gif" alt="360training.com" /></a></h1>
+                <div class="quick-access">
+                	<ul class="links">
+                    	<li><div class="live_sale">24/7 Support<br />1-800-442-1149</div></li>
+						<li><div class="technical_support"><a href="http://www.360trainingsupport.com" target="_blank">Technical<br />Support</a></div></li>
+						<li><div class="sales_enroll">Sales/Enroll<br /><strong>888-360-8764</strong></div></li>
+						<li><div class="corporate_solution"><strong>Corporate Solutions</strong><br /><a href="http://www.360comply.com" target="_blank">Learn More</a></div></li>
+					</ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+          <!-- END HeaderDisplay.jspf -->   
+  <!-- END CachedHeaderDisplay.jsp -->
+        <!-- END Header --> 
+        
+        
+  <!-- BEGIN Navigation -->   
+  <!-- BEGIN ESpotNavDisplay.jsp -->
+        
+        
+        <div class="nav-container-new">
+			<ul id="nav-new">
+            	<li class="black"><a href="#">Home</a></li>
+                <li class="red"><a href="#" class="dropdown">Course Library</a>
+                    <ul>
+                      <li> <a href="#">OSHA Online Outreach Training</a></li>
+                      <li> <a href="#">HAZWOPER Training</a></li>
+                      <li><a href="#">MSHA Part 46 Training</a></li>
+                      <li> <a href="#">Alcohol Seller Certification</a></li>
+                      <li> <a href="#">Food Manager Certification</a></li>
+                      <li> <a href="#">Insurance Licencing</a></li>
+                      <li class="last"><a href="#">Adjuster Licensing</a></li>
+                    </ul>
+				</li>
+                <li class="red">
+                	<form method="post" action="#" id="searchform">
+						<div class="search_box">
+							<div class="search_area">
+								<input type="text" class="search-txt" value="" id="q" name="q" />
+								<input type="image" src="images/search_bar_right_corner.png" class="search_btn" />
+                            </div>
+						</div>
+                    </form>
+                </li>
+				<li class="black"><a href="services.html" class="chat">Chat</a></li>
+                <li><a href="#">Login</a>
+					<div class="popup">
+						<div class="loginform">
+                        	<form method="post" action="#" id="loginform">
+								<div class="label"> Email </div>
+								<input type="text" class="text" />
+								<div class="label"> Password </div>
+								<div class="clearfix"></div>
+								<input type="password" class="text" />
+                            	<div class="clearfix"></div>
+                            	<input type="image" class="login_btn" src="images/login_button.png" />
+                            	<a href="#"> Forgot passoword? </a>
+                            </form>
+						</div>
+					</div>
+                </li>
+                <li class="last cart"><a href="#" class="cart"> 3 Items </a>
+					<div class="popup" style="width: 250px; right:0px;">
+						<div class="productcart_info">
+							<div class="product_name"> Anti-Money Laundering &amp; Financial Crime </div>
+							<div class="product_price"> $50 </div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="productcart_info">
+							<div class="product_name"> Anti-Money Laundering &amp; Financial Crime </div>
+							<div class="product_price"> $50 </div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="productcart_info">
+							<div class="product_name"> Anti-Money Laundering &amp; Financial Crime </div>
+							<div class="product_price"> $50 </div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="chck_btn"><input type="image" src="images/checkout.png" /></div>
+					</div>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        
+        <!-- END ESpotNavDisplay.jsp -->
+        <!-- END Navigation --> 
+        
+        <!-- Middle Container Start here -->
+        <div class="main-container col1-layout">
+        	<div class="main">
+            	<div class="col-main">
+                	
+                    <!-- Begin wizard -->
+					<div class="wizardnavigation">
+						<ul id="stepNav">
+							<li class="stepNavNoBg"> <span> 1 </span>Account &amp; Billing Information</li>
+							<li class="stepNav2Color"> <span>2 </span> Confirm Your Order</li>
+							<li class="current last"> <span> 3 </span> Receipt </li>
+						</ul>
+                        <div class="clearfix"></div>
+					</div>
+					<!-- End wizard -->
+                    
+                    <!-- Cart Container Area -->
+					<div class="cart">
+                    	
+                        <div class="page-title title-buttons">
+							<h1>Receipt</h1>
+                            <ul class="checkout-types">
+								<li><div class="printer-friendly"> <a href="receipt_printer_friendly.html"> Printer Friendly Version </a>  </div></li>
+							</ul>
+                            <div class="clearfix"></div>
+            			</div>
+                        
+                        <div class="cart-content">
+							<div class="block1 margin-bottom">
+								<div class="cart-iems">
+									<p> July 10, 2012 <br /><strong>Dear Guestuser,</strong> </p>
+                                    <p> We would like to thank you for your online purchase. Our Customer Service team is available 24 hours a day, 365 days a year to assist you. We are happy to offer the following options to contact us: </p>
+                                    <div class="left">
+                                    	<ul class="points">
+                                      		<li> Call us toll-free at 1-855-392-1683</li>
+                                      		<li> E-mail us at <a href="mailto:b2bsupport@360training.com">b2bsupport@360training.com</a></li>
+                                    	</ul>
+                                    	<p> Below is a confirmation of your purchase for your records. </p>
+                                    	<p> <strong> Order Number:</strong> 196764</p>
+                                    </div>
+                                    <div class="setup-student-account">
+                                      <p> If you would like to send this receipt out to another email please enter that email here.  (Optional) </p>
+                                      <form action="http://go.360training.com/l/12002/2012-11-01/5c7qq" method="post">
+                                        <input type="text" />
+                                        <input type="image" src="images/Setup-Student-Account.png" class="setup-student-ac" value="" />
+                                      </form>
+                                    </div>
+                                    <div class="clearfix"></div>                                    
+								</div>
+							</div>
+                            <div class="block1 margin-bottom">
+                            	<h3 class="title extra">Billing Information</h3>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="data-table">
+                                	<colgroup>
+                                		<col />
+                                        <col width="1" />
+                                        <col width="1" />
+                                        <col width="1" />
+                                    </colgroup>
+                                    <thead>
+                                    	<tr>
+                                        	<th class="first a-left" width="60%" rowspan="1">Item</th>
+                                            <th class="a-center" rowspan="1">Quantity</th>
+                                            <th class="a-center" width="20%" rowspan="1">Item Cost</th>
+                                            <th class="a-right" rowspan="1">Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <td class="first a-left">Alabama Salesperson Exam Prep</td>
+                                          <td class="a-center">1</td>
+                                          <td class="a-center">$59.00 </td>
+                                          <td class="a-right">$59.00</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="first a-left">Course  Subtotal</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-right">$59.00</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="first a-left">Discount</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-right">($5.90)</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="first a-left">Shipping</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-right">$7.95</td>
+                                        </tr>
+                                        <tr>
+                                          <td class="first a-left">Tax</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-center">&nbsp;</td>
+                                          <td class="a-right">$0.00</td>
+                                        </tr>
+                                         
+                                        <tr>
+                                          <td class="first a-left">Total</td>
+                                          <td align="right">&nbsp;</td>
+                                          <td align="right">&nbsp;</td>
+                                          <td class="a-right">$61.05</td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="block1 margin-bottom">
+                            	<h3 class="title extra">Student Account Information:</h3>
+                                <ul>
+                                  <li> Username: testerdamon321@testerdamon.com</li>
+                                  <li> password : *****</li>
+                                  <li> Training Login : <a href="#">CLICK HERE TO BEGIN YOUR COURSES</a></li>                                  
+                                </ul>
+                            </div>
+                            <div class="block1 margin-bottom">
+                            	<h3 class="title extra">Billing Information:</h3>
+                                <ul>
+                                  <li> Name: Guest</li>
+                                  <li> Street Address:guest</li>
+                                  <li> Address [City, State, Zip]: guest</li>
+                                  <li> Country: United States</li>
+                                  <li> Phone: 8883183558</li>
+                                  <li> Email: guest@guest.com</li>
+                                </ul>
+                            </div>
+                            <div class="block1 margin-bottom">
+                            	<h3 class="title extra">Shipping Information:</h3>
+                                <ul>
+                                  <li> Name: Guest</li>
+                                  <li> Street Address:guest</li>
+                                  <li>Address [City, State, Zip]: guest</li>
+                                  <li> Country: United States</li>
+                                  <li> Phone: 8883183558</li>
+                                </ul>
+                            </div>
+                            <div class="block1 margin-bottom">
+                            	<h3 class="title extra">Payment Information:</h3>
+                                <ul>
+                                  <li> Your order has been processed using the following information and will appear on your billing statement shortly. </li>
+                                  <li> <strong>The charge will appear as 360training.com.</strong> </li>
+                                  <li>Name on Card: Marketing Purchasing Card</li>
+                                  <li> Payment Type: VISA</li>
+                                  <li> Card Number: XXXX-XXXX-XXXX-8172</li>
+                                </ul>
+                            </div>
+                        </div>                       
+                        
+                    </div>
+                    <!-- End Cart -->
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- Middle Container End here -->
+        
+       <!-- BEGIN SecurityLogosESpot.jsp -->
+        		 <div class="footer-container">
+			<div class="footer">
+				<ul class="logos"> 
+					<li> <img src="images/bbb.gif" alt="ACCREDITED" /></li>
+					<li> <img src="images/truste.gif" alt="Trustee" /></li>
+					<li> <img src="images/nortonsecure.gif" alt="Norton Secure" /></li>
+					<li>  <img src="images/Securiy.png" alt="Security" /></li>
+					<li class="last"> <img src="images/360training.gif" alt="360training" /></li>
+				</ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+       	  <!-- END SecurityLogosESpot.jsp --> 
+    
+	</div>
+</div>
+<!-- Main Wrapper Conatiner End -->
+</body>
+</html>
